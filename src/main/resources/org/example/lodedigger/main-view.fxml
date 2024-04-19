@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import org.example.lodedigger.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.lodedigger.MainController">
+	<fx:include source="menu-view.fxml" fx:id="menu"/>
+		<Area fx:id="fxArea" layoutY="25.0" />
+		<Button fx:id="button" opacity="0.0" />
+</AnchorPane>

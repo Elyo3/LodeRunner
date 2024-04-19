@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.lodedigger.MenuController">
+   <children>
+      <MenuBar prefWidth="600.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                <MenuItem mnemonicParsing="false" text="New Game" onAction="#onNewGame"/>
+                <MenuItem mnemonicParsing="false" text="Close" onAction="#onClose"/>
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Map">
+               <items>
+                  <RadioMenuItem mnemonicParsing="false" text="1" toggleGroup="$Map" onAction="#setMap" fx:id="1">
+                       <toggleGroup>
+                           <ToggleGroup fx:id="Map"/>
+                       </toggleGroup></RadioMenuItem>
+                  <RadioMenuItem mnemonicParsing="false" text="2" toggleGroup="$Map" onAction="#setMap" fx:id="2"/>
+                  <RadioMenuItem mnemonicParsing="false" text="3" toggleGroup="$Map" onAction="#setMap" fx:id="3"/>
+                   <RadioMenuItem mnemonicParsing="false" text="4" toggleGroup="$Map" onAction="#setMap" fx:id="4"/>
+                   <RadioMenuItem mnemonicParsing="false" text="5" toggleGroup="$Map" onAction="#setMap" fx:id="5"/>
+               </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" onAction="#onAbout"/>
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

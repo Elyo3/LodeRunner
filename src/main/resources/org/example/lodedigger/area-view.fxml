@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import entities.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<fx:root prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: dimgray;" type="javafx.scene.layout.StackPane" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+	<GridPane fx:id="gameMap">
+	  <columnConstraints>
+		  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="60.0" />
+		  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="60.0" />
+		  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="60.0" />
+		  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="60.0" />
+		  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="60.0" />
+		<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="60.0" />
+		<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="60.0" />
+		  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="60.0" />
+		  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="60.0" />
+		  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="60.0" />
+		  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="60.0" />
+		  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="60.0" />
+	  </columnConstraints>
+	  <rowConstraints>
+		  <RowConstraints minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+		  <RowConstraints minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+		  <RowConstraints minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+		  <RowConstraints minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+		  <RowConstraints minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+		  <RowConstraints minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+		<RowConstraints minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+		<RowConstraints minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+		<RowConstraints minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+		  <RowConstraints minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+		  <RowConstraints minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+		  <RowConstraints minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+	  </rowConstraints>
+	  <children>
+		  <!--
+			  <Ladder GridPane.columnIndex="3" GridPane.rowIndex="10" />
+			  <Ladder GridPane.columnIndex="5" GridPane.rowIndex="9" />
+			  <Ladder GridPane.columnIndex="5" GridPane.rowIndex="10" />
+			  <Ladder GridPane.columnIndex="6" GridPane.rowIndex="10" />
+
+			  <Scaffolding GridPane.columnIndex="1" GridPane.rowIndex="1" />
+			  <Scaffolding GridPane.columnIndex="0" GridPane.rowIndex="1" />
+			  <Scaffolding GridPane.columnIndex="2" GridPane.rowIndex="2" />
+			  <Scaffolding GridPane.columnIndex="4" GridPane.rowIndex="10" />
+
+		      <Gold GridPane.columnIndex="8" GridPane.rowIndex="10" />
+		      <Gold GridPane.columnIndex="3" GridPane.rowIndex="9" />
+
+			  <Ground GridPane.columnIndex="0" GridPane.rowIndex="11" />
+			  <Ground GridPane.columnIndex="1" GridPane.rowIndex="11" />
+			  <Ground GridPane.columnIndex="2" GridPane.rowIndex="11" />
+			  <Ground GridPane.columnIndex="3" GridPane.rowIndex="11" />
+			  <Ground GridPane.columnIndex="4" GridPane.rowIndex="11" />
+			  <Ground GridPane.columnIndex="5" GridPane.rowIndex="11" />
+			  <Ground GridPane.columnIndex="6" GridPane.rowIndex="11" />
+			  <Ground GridPane.columnIndex="7" GridPane.rowIndex="11" />
+			  <Ground GridPane.columnIndex="8" GridPane.rowIndex="11" />
+			  <Ground GridPane.columnIndex="9" GridPane.rowIndex="11" />
+			  <Ground GridPane.columnIndex="10" GridPane.rowIndex="11" />
+			  <Ground GridPane.columnIndex="11" GridPane.rowIndex="11" />
+			-->
+	  </children>
+	</GridPane>
+	<Pane fx:id="entityField">
+		<children>
+			<Player fx:id="fxPlayer" layoutX="1000.0" />
+		</children>
+	</Pane>
+   <Label fx:id="gameOverLabel" alignment="CENTER" contentDisplay="CENTER" opacity="0.0" prefHeight="223.0" prefWidth="536.0" text="[GAME OVER]">
+      <font>
+         <Font name="Consolas Bold" size="72.0" />
+      </font>
+      <textFill>
+         <LinearGradient endX="1.0" endY="1.0">
+            <stops>
+               <Stop>
+                  <color>
+                     <Color red="0.13300000131130219" green="0.22540287673473358" blue="0.3799999952316284" />
+                  </color>
+               </Stop>
+               <Stop offset="1.0">
+                  <color>
+                     <Color red="0.16726043820381165" green="0.08579999953508377" blue="0.25999999046325684" />
+                  </color>
+               </Stop>
+            </stops>
+         </LinearGradient>
+      </textFill>
+   </Label>
+   <Label fx:id="victoryLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="42.0" layoutY="199.0" opacity="0.0" prefHeight="223.0" prefWidth="536.0" text="[VICTORY]">
+      <font>
+         <Font name="Consolas Bold" size="72.0" />
+      </font>
+      <textFill>
+         <LinearGradient endX="1.0" endY="1.0">
+            <stops>
+               <Stop>
+                  <color>
+                     <Color red="0.13300000131130219" green="0.22540287673473358" blue="0.3799999952316284" />
+                  </color>
+               </Stop>
+               <Stop offset="1.0">
+                  <color>
+                     <Color red="0.16726043820381165" green="0.08579999953508377" blue="0.25999999046325684" />
+                  </color>
+               </Stop>
+            </stops>
+         </LinearGradient>
+      </textFill>
+   </Label>
+</fx:root>

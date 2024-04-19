@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="620.0" prefWidth="600.0" style="-fx-background-color: dimgray;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.lodedigger.LoadingController">
+    <fx:include fx:id="menu" source="menu-view.fxml" />
+   <StackPane prefHeight="620.0" prefWidth="600.0">
+      <children>
+         <VBox alignment="CENTER" prefHeight="620.0" prefWidth="600.0">
+            <children>
+               <Label alignment="CENTER" prefHeight="53.0" prefWidth="331.0" text="Level Complete!">
+                  <font>
+                     <Font name="Consolas Bold" size="36.0" />
+                  </font></Label>
+               <Label fx:id="pointsLabel" prefHeight="46.0" prefWidth="294.0" text="Points: ">
+                  <font>
+                     <Font name="Consolas Bold" size="36.0" />
+                  </font></Label>
+            </children>
+         </VBox>
+      </children>
+   </StackPane>
+</AnchorPane>
